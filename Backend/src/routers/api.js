@@ -10,6 +10,7 @@ import eventsRouter from "./eventsRouter.js";
 import conProjectRouter from "./consProjectRouter.js";
 import vehiclesRouter from "./vehiclesRouter.js";
 import reportsRouter from "./reportsRouter.js";
+import taskRouter from "./taskRouter.js";
 
 const apiRouter = Router();
 
@@ -23,6 +24,7 @@ apiRouter.use("/patients", patientsRouter);
 apiRouter.use("/products", productsRouter);
 apiRouter.use("/projects", projectsRouter);
 apiRouter.use("/reports", reportsRouter);
+apiRouter.use("/tasks", taskRouter);
 apiRouter.use("/users", usersRouter);
 apiRouter.use("/vehicles", vehiclesRouter);
 
