@@ -24,17 +24,17 @@ export default function HomePage() {
 
   const handleCreate = async (data: { title: string; description: string }) => {
     await createTask(data);
-    setSuccessMessage("✓ Tarea creada con éxito");
+    setSuccessMessage("Tarea creada con éxito");
   };
 
   const handleUpdate = async (id: string, data: Partial<Task>) => {
     await updateTask(id, data);
-    setSuccessMessage("✓ Tarea actualizada");
+    setSuccessMessage("Tarea actualizada");
   };
 
   const handleDelete = async (id: string) => {
     await deleteTask(id);
-    setSuccessMessage("✓ Tarea eliminada");
+    setSuccessMessage("Tarea eliminada");
   };
 
   return (
